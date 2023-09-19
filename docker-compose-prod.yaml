@@ -1,0 +1,20 @@
+version: "3"
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    container_name: radar3-nginx
+  
+  radar3-api:
+    image: radar3-api:latest    
+    container_name: radar3-api
+
+  radar3-client:
+    image: radar3-client:latest
+    container_name: radar3-client
+
+volumes:
+  data:
