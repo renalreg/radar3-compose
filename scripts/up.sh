@@ -23,12 +23,12 @@ while getopts "he:" flag; do
      echo
      echo "Environment: $OPTARG"
      echo "Starting dev environment"
-     docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d
+     docker-compose -f docker-compose-dev.yaml up -d
    elif [ $OPTARG = "prod" ]; then
      echo
      echo "Environment: $OPTARG"
      echo "Starting prod environment"
-     docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+     docker-compose -f docker-compose.prod.yaml up -d
    else
      echo
      echo "Invalid environment"
