@@ -1,6 +1,6 @@
 [submodule "radar3-api"]
-    path = radar3-api
-    url = https://github.com/renalreg/radar3-api.git
+	path = radar3-api
+	url = https://github.com/renalreg/radar3-api.git
 [submodule "radar3-client"]
-    path = radar3-client
-    url = https://github.com/renalreg/radar3-client.git
+	path = radar3-client
+	url = https://github.com/renalreg/radar3-client.git
