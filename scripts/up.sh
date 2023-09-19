@@ -23,7 +23,7 @@ while getopts "he:" flag; do
      echo
      echo "Environment: $OPTARG"
      echo "Starting dev environment"
-     docker-compose -f docker-compose-dev.yaml up -d
+     docker-compose -f docker-compose-dev.yaml up -d --build
    elif [ $OPTARG = "prod" ]; then
      echo
      echo "Environment: $OPTARG"
